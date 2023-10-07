@@ -1,0 +1,32 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+.row 
+{
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.column 
+{
+    flex: 1;
+    border-right: 1px solid black;
+}
+
+.inner-grid 
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.cell 
+{
+    flex: 1;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
