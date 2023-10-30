@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Phone Directory</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Phone Directory</h1>
+        
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Contact Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <button type="button" id="add-contact">Add Contact</button>
+        </form>
+
+        <div class="form-group">
+            <label for="search">Search contact by Mobile No:</label>
+            <input type="tel" id="search" oninput="searchContact()">
+        </div>
+
+        <h2>Contacts Summary</h2>
+        <table id="contact-table">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Name</th>
+                    <th onclick="sortTable(1)">Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="error" class="error"></div>
+    <div id="noResult" class="error hidden">No Result</div>
+</body>
+</html>
