@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.min.js"></script>
+    <script src="script.js"></script>
+    <title>Countdown Timer App with RxJs</title>
+</head>
+<body>
+
+<div class="container" id="div1">
+    <div class="row">
+        <input type="number" id="hours" placeholder="h">
+        <input type="number" id="minutes" placeholder="m">
+        <input type="number" id="seconds" placeholder="s">
+    </div>
+    <div class="row">
+        <button onclick="startCountdown()">START COUNTDOWN</button>
+    </div>
+</div>
+
+<div class="container" id="div2">
+    <div class="row" id="countdown"></div>
+</div>
+
+</body>
+</html>
