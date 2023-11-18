@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.note-input {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#note-input {
+    flex: 1;
+}
+
+button#add-note {
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.note {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.delete {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+button.edit {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
